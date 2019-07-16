@@ -8,15 +8,6 @@ namespace Trans2ChiAmount
 {
     class Program
     {
-        static string[] digit = {
-            "零","壹","貳","參","肆"
-           ,"伍","陸","柒","捌","玖"
-        };
-        //不規則陣列 宣告時直接初始化
-        static string[][] unit = {
-            new []{"元","萬","億" },
-            new []{"","拾","佰","仟"}
-        };
         static void Main(string[] args)
         {
             do
@@ -26,7 +17,20 @@ namespace Trans2ChiAmount
                 double.TryParse(Console.ReadLine(), out amount);
             } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
+        static string[] digit = {
+            "零","壹","貳","參","肆"
+           ,"伍","陸","柒","捌","玖"
+        };
+        //不規則陣列 宣告時直接初始化
+        static string[][] unit = {
+            new []{"元","萬","億" },
+            new []{"","拾","佰","仟"}
+        };
+        static string Trans2ChiAmount(double number) {
+            string result = String.Empty;
 
+            return result;
+        }
         static void ShiftRight(double number,int digit) {
             //int.TryParse(digit, out digit);
         }
